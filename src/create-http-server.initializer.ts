@@ -14,7 +14,7 @@ declare module "@dyna/core" {
 /**
  * Create HTTP Server
  */
-export class CreateHttpServer extends BaseInitializer {
+export class CreateHttpServerInitializer extends BaseInitializer {
 
   port: number = env('HTTP_SERVER_PORT', '8900');
   host: string = env('HTTP_SERVER_HOST', 'localhost');
