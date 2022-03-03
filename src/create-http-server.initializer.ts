@@ -5,7 +5,7 @@ import { env } from '@dyna/env'
 /**
  * Extend application extra values
  */
-declare module '@dyna/core' {
+ declare global {
   export interface ExtraApplication {
     httpServer?: Server
   }
