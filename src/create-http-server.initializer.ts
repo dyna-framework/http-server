@@ -3,15 +3,6 @@ import { createServer, Server } from 'http'
 import { env } from '@dyna/env'
 
 /**
- * Extend application extra values
- */
- declare global {
-  export interface ExtraApplication {
-    httpServer?: Server
-  }
-}
-
-/**
  * Create HTTP Server
  */
 export class CreateHttpServerInitializer extends BaseInitializer {
